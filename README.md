@@ -25,3 +25,8 @@ To rollback `mix ecto.rollback --step 1`
 `Synthesizer.Repo.all(Synthesizer.Account)` is an example query. Aliases can be setup so not everything needs to be preceeded by the module name
 
 `recompile()` if you change code and don't want to start a new session
+
+
+### Formatting
+
+`mix format mix.exs "lib/**/*.{ex,exs}" "test/**/*.{ex,exs}"`
