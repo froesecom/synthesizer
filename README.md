@@ -18,6 +18,16 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 To run migrations `mix ecto.migrate`
 To rollback `mix ecto.rollback --step 1`
 
+
+### Contexts
+
+"Contexts are dedicated modules that expose and group related functionality"
+
+To generate entire scaffolding, including views, controllers and schema `mix phx.gen.html FooContext BarResource bar_resources some_attribute:string`
+The `--no-context` and `--no-schema` flags can be passed to prevent creating those files, if needed.
+
+`mix phx.gen.context` can be used if you don't need web resources. `--no-schema` can be used if you don't want the schema.
+
 ### Running a console
 
 `iex -S mix` to start a session
