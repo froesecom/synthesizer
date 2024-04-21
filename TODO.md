@@ -1,0 +1,4 @@
+- read this and get relationships and contexts going https://hexdocs.pm/phoenix/contexts.html
+- run seeds to add whatever needs to be populated
+- run a script (like a rake script) to add csvs
+- setup TypeScript
