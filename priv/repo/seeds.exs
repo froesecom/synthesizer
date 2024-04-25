@@ -9,3 +9,11 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+alias Synthesizer.Repo
+alias Synthesizer.Account
+
+Repo.delete_all Account
+
+accounts_data_file = "#{__DIR__}/seeds/accounts.json"
+File.read!(accounts_data_file) |> Jason.decode! |> IO.inspect

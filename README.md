@@ -2,9 +2,11 @@
 
 A secret Phoenix app.
 
-To start your Phoenix server:
+## Getting started
 
   * Run `mix setup` to install and setup dependencies
+  * `mix ecto.migrate` to setup database
+  * `mix run priv/repo/seeds.exs` to seed the database. (See "Seeds" below)
   * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
@@ -18,6 +20,10 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 To run migrations `mix ecto.migrate`
 To rollback `mix ecto.rollback --step 1`
 
+### Seeds
+
+Copy `priv/repo/seeds/accounts.example.json` to `priv/repo/seeds/accounts.json` and populate with real sead data.
+`mix run priv/repo/seeds.exs` to seed the database
 
 ### Contexts
 
